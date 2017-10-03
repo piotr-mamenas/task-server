@@ -21,7 +21,12 @@ import 'hammerjs';
     SharedModule
   ],
   providers: [ ],
-  exports: [ ]
+  exports: [
+    HomeComponent,
+    NotFoundComponent,
+    LoginComponent,
+    NavigationComponent
+  ]
 })
 
 export class CoreModule { }

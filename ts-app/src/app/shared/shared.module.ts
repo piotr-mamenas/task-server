@@ -7,10 +7,9 @@ import { MdCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
 
 import 'hammerjs';
-import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
-  declarations: [NavigationComponent],
+  declarations: [],
   imports: [
     CommonModule,
     ReactiveFormsModule,

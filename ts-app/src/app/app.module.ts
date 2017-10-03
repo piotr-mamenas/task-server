@@ -7,11 +7,6 @@ import { HttpModule } from '@angular/http';
 // Module Components
 import { AppComponent } from './app.component';
 
-// Navigation Components
-import { HomeComponent } from './core/components/home/home.component';
-import { NotFoundComponent } from './core/components/not-found/not-found.component';
-import { LoginComponent } from './core/components/login/login.component';
-
 // Internal Modules
 import { SharedModule } from './shared/shared.module';
 import { TaskModule } from './task/task.module';
@@ -21,10 +16,7 @@ import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    NotFoundComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +24,8 @@ import { routing } from './app.routing';
     HttpModule,
     CoreModule,
     SharedModule,
-    TaskModule
+    TaskModule,
+    routing
   ],
   providers: [],
   bootstrap: [ AppComponent ]
