@@ -4,11 +4,9 @@ import { SharedModule } from '../shared/shared.module';
 import 'hammerjs';
 
 @NgModule({
-  declarations: [
-
-  ],
+  declarations: [],
   imports: [
-    SharedModule,
+    SharedModule
   ],
   providers: [ ],
   exports: [ ]
