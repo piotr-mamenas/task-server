@@ -1,6 +1,9 @@
 // Angular Libs
 import { NgModule } from '@angular/core';
+
+// Internal Modules
 import { SharedModule } from '../shared/shared.module';
+import { BlogModule } from '../blog/blog.module';
 
 // Module Components
 import { HomeComponent } from './components/home/home.component';
@@ -18,7 +21,8 @@ import 'hammerjs';
     NavbarComponent,
   ],
   imports: [
-    SharedModule
+    SharedModule,
+    BlogModule
   ],
   providers: [ ],
   exports: [

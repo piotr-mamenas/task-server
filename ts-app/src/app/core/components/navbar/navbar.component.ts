@@ -6,8 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  navLinks: any[];
 
-  constructor() { }
+  constructor() {
+    this.navLinks = [
+      {
+        label: 'Home',
+        url: './'
+      },
+      {
+        label: 'Login',
+        url: './login'
+      }
+    ];
+  }
 
   ngOnInit() {
   }

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './main-panel.component.html',
   styleUrls: ['./main-panel.component.css']
 })
-export class MainPanel implements OnInit {
+export class MainPanelComponent implements OnInit {
 
   posts = ['Hello','Second Hello','Third Hello'];
 
