@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 
 // Internal Modules
 import { SharedModule } from './shared/shared.module';
-import { TaskModule } from './task/task.module';
+import { BlogModule } from './blog/blog.module';
 import { CoreModule } from './core/core.module';
 
 import { routing } from './app.routing';
@@ -24,7 +24,7 @@ import { routing } from './app.routing';
     HttpModule,
     CoreModule,
     SharedModule,
-    TaskModule,
+    BlogModule,
     routing
   ],
   providers: [],

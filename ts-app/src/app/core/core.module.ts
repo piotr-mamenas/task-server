@@ -6,7 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoginComponent } from './components/login/login.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 import 'hammerjs';
 
@@ -15,7 +15,7 @@ import 'hammerjs';
     HomeComponent,
     NotFoundComponent,
     LoginComponent,
-    NavigationComponent
+    NavbarComponent,
   ],
   imports: [
     SharedModule
@@ -25,7 +25,7 @@ import 'hammerjs';
     HomeComponent,
     NotFoundComponent,
     LoginComponent,
-    NavigationComponent
+    NavbarComponent
   ]
 })
 
