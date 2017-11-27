@@ -2,23 +2,26 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 
 // Module Components
-import { MainPanelComponent } from './components/main-panel/main-panel.component';
-import { PostComponent } from './components/post/post.component';
+import { BlogMainPanelComponent } from './components/main-panel/blog-main-panel.component';
+import { BlogRightPanelComponent } from './components/right-panel/blog-right-panel.component';
+import { BlogPostComponent } from './components/post/blog-post.component';
 
 import 'hammerjs';
 
 @NgModule({
   declarations: [
-    MainPanelComponent,
-    PostComponent
+    BlogMainPanelComponent,
+    BlogRightPanelComponent,
+    BlogPostComponent
   ],
   imports: [
     SharedModule
   ],
   providers: [],
   exports: [
-    MainPanelComponent,
-    PostComponent
+    BlogMainPanelComponent,
+    BlogRightPanelComponent,
+    BlogPostComponent
   ]
 })
 
