@@ -6,6 +6,7 @@ import { MdButtonModule} from '@angular/material';
 import { MdCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
 import { MdToolbarModule } from '@angular/material';
+import { MdCardModule } from '@angular/material';
 
 import { Router, RouterModule } from '@angular/router';
 
@@ -24,10 +25,11 @@ import 'hammerjs';
     MdCheckboxModule,
     MatTabsModule,
     MdToolbarModule,
-    RouterModule
+    RouterModule,
+    MdCardModule
   ],
   providers: [ ],
-  exports: [ CommonModule, ReactiveFormsModule, MdButtonModule, MdCheckboxModule, MatTabsModule, BrowserAnimationsModule, MdToolbarModule, RouterModule ]
+  exports: [ CommonModule, ReactiveFormsModule, MdButtonModule, MdCheckboxModule, MatTabsModule, BrowserAnimationsModule, MdToolbarModule, RouterModule, MdCardModule ]
 })
 
 export class SharedModule { }

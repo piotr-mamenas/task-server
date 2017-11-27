@@ -3,19 +3,22 @@ import { SharedModule } from '../shared/shared.module';
 
 // Module Components
 import { MainPanelComponent } from './components/main-panel/main-panel.component';
+import { PostComponent } from './components/post/post.component';
 
 import 'hammerjs';
 
 @NgModule({
   declarations: [
-    MainPanelComponent
+    MainPanelComponent,
+    PostComponent
   ],
   imports: [
     SharedModule
   ],
   providers: [],
   exports: [
-    MainPanelComponent
+    MainPanelComponent,
+    PostComponent
   ]
 })
 
