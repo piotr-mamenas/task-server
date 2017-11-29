@@ -9,7 +9,7 @@ import { Post } from '../../classes/post';
 })
 export class BlogMainPanelComponent implements OnInit {
 
-  posts: any[];
+  posts: Post[];
 
   constructor(http: Http) {
     http.get('http://jsonplaceholder.typicode.com/posts')

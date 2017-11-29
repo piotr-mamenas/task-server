@@ -10,6 +10,12 @@
   </md-card-content>
 
   <md-card-actions>
-    <button md-button>Comment</button>
+    <button (click)='onClickComment(renderedPost); $event.stopPropagation()' md-button>Comment</button>
   </md-card-actions>
 </md-card>
+
+<div *ngIf='displayCommentBox'>
+  <md-card *ngFor='let comment of comments'>
+     {{ comment.title }}
+  </md-card>
+</div>
