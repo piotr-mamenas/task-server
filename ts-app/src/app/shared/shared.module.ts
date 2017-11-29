@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { MdButtonModule} from '@angular/material';
 import { MdCheckboxModule } from '@angular/material';
@@ -21,6 +22,7 @@ import 'hammerjs';
     CommonModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    HttpModule,
     MdButtonModule,
     MdCheckboxModule,
     MatTabsModule,
@@ -29,7 +31,7 @@ import 'hammerjs';
     MdCardModule
   ],
   providers: [ ],
-  exports: [ CommonModule, ReactiveFormsModule, MdButtonModule, MdCheckboxModule, MatTabsModule, BrowserAnimationsModule, MdToolbarModule, RouterModule, MdCardModule ]
+  exports: [ CommonModule, ReactiveFormsModule, MdButtonModule, MdCheckboxModule, MatTabsModule, BrowserAnimationsModule, MdToolbarModule, RouterModule, MdCardModule, HttpModule ]
 })
 
 export class SharedModule { }

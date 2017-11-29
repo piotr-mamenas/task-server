@@ -17,7 +17,8 @@ import 'hammerjs';
   imports: [
     SharedModule
   ],
-  providers: [],
+  providers: [
+  ],
   exports: [
     BlogMainPanelComponent,
     BlogRightPanelComponent,

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+import { Post } from '../../classes/post';
 
 @Component({
   selector: 'blog-main-panel',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogMainPanelComponent implements OnInit {
 
-  posts = ['Hello','Second Hello','Third Hello'];
+  posts: any[];
 
-  constructor() { }
+  constructor(http: Http) {
+    http.get('http://jsonplaceholder.typicode.com/posts')
+        .subscribe(response => {
+          this.posts = response.json();
+        });
+  }
 
   ngOnInit() {
   }
