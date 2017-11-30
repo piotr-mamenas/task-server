@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 // Internal Modules
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { FacebookModule } from 'ng2-facebook-sdk';
 
 import { routing } from './app.routing';
 
@@ -23,6 +24,7 @@ import { routing } from './app.routing';
     HttpModule,
     CoreModule,
     SharedModule,
+    FacebookModule,
     routing
   ],
   providers: [],
