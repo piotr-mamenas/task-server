@@ -13,7 +13,6 @@ export class BlogRightPanelComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(CalendarMonths);
   }
 
 }
