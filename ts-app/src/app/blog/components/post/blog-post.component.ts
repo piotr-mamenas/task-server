@@ -28,6 +28,5 @@ export class BlogPostComponent implements OnInit {
         });
 
     this.displayCommentBox = !this.displayCommentBox;
-    console.log(post.id);
   }
 }

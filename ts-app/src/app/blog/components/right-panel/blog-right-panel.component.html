@@ -1,8 +1,8 @@
 <div class='panel panel-body'>
   <md-card>
-    <button md-button>January (1)</button>
-    <button md-button>February (2)</button>
-    <button md-button>March (3)</button>
-    <button md-button>April (6)</button>
+    <div class='row' *ngFor='let month of months'>
+      <button md-button class='col-xs-6'>{{ month }}</button>
+      <div class='col-xs-4'>(2)</div>
+    </div>
   </md-card>
 </div>

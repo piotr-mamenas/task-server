@@ -8,7 +8,6 @@ import { Post } from '../../classes/post';
   styleUrls: ['./blog-main-panel.component.css']
 })
 export class BlogMainPanelComponent implements OnInit {
-
   posts: Post[];
 
   constructor(http: Http) {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarMonths } from '../../../shared/constants';
 
 @Component({
   selector: 'blog-right-panel',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-right-panel.component.css']
 })
 export class BlogRightPanelComponent implements OnInit {
+  months = CalendarMonths;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    console.log(CalendarMonths);
   }
 
 }

@@ -8,6 +8,7 @@ import { MdCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
 import { MdToolbarModule } from '@angular/material';
 import { MdCardModule } from '@angular/material';
+import { MatProgressSpinnerModule } from '@angular/material';
 
 import { Router, RouterModule } from '@angular/router';
 
@@ -28,10 +29,23 @@ import 'hammerjs';
     MatTabsModule,
     MdToolbarModule,
     RouterModule,
-    MdCardModule
+    MdCardModule,
+    MatProgressSpinnerModule
   ],
   providers: [ ],
-  exports: [ CommonModule, ReactiveFormsModule, MdButtonModule, MdCheckboxModule, MatTabsModule, BrowserAnimationsModule, MdToolbarModule, RouterModule, MdCardModule, HttpModule ]
+  exports: [
+    CommonModule,
+    ReactiveFormsModule,
+    MdButtonModule,
+    MdCheckboxModule,
+    MatTabsModule,
+    BrowserAnimationsModule,
+    MdToolbarModule,
+    RouterModule,
+    MdCardModule,
+    HttpModule,
+    MatProgressSpinnerModule
+  ]
 })
 
 export class SharedModule { }
