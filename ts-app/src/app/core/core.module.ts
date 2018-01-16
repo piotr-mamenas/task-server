@@ -18,7 +18,7 @@ import 'hammerjs';
     HomeComponent,
     NotFoundComponent,
     LoginComponent,
-    NavbarComponent,
+    NavbarComponent
   ],
   imports: [
     SharedModule,
